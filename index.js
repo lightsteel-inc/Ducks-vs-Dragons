@@ -40,4 +40,10 @@ function update() {
   if(real.keyD.isDown) {
     real.hero.x += 5
   }
+  if(real.keyA.isDown) {
+    real.hero.x -= 5
+  }
+  if(real.keyW.isDown) {
+    real.hero.y -= 5
+  }
 }
