@@ -18,7 +18,7 @@ var config = {
 }
 var game = new Phaser.Game(config)
 function preload() {
-  this.load.image('dvdtileone','assets/dvdtileone.png')
+  this.load.image('dvdtileone','assets/dvdsetone.png')
   this.load.tilemapTiledJSON('dvdmapone','assets/dvdmapone.json')
 }
 function create() {
