@@ -21,3 +21,9 @@ function preload() {
   this.load.image('dvdtileone','assets/dvdtileone.png')
   this.load.tilemapTiledJSON('dvdmapone','assets/dvdmapone.json')
 }
+function create() {
+  var map = this.add.tilemap('dvdmapone')
+  var dvdtileone = map.addTilesetImage('dvdsetone','dvdtileone')
+  var toplayer = map.createStaticLayer("SkyOne", [dvdtileone], 0, 0)
+  var bottomlayer = map.createStaticLayer("GroundBlackOne", [dvdtileone], 0, 0)
+}
