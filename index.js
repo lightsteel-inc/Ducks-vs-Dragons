@@ -23,7 +23,7 @@ function preload() {
 }
 function create() {
   var map = this.add.tilemap('dvdmapone')
-  var dvdtileone = map.addTilesetImage('dvdsetone','dvdtileone')
+  var dvdtileone = map.addTilesetImage('tilesetone','dvdtileone')
   var toplayer = map.createStaticLayer("SkyOne", [dvdtileone], 0, 0)
   var bottomlayer = map.createStaticLayer("GroundBlackOne", [dvdtileone], 0, 0)
 }
