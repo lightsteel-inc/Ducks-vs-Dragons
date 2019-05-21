@@ -23,7 +23,7 @@ function preload() {
   this.load.tilemapTiledJSON('dvdmapone','assets/dvdmapone.json')
 }
 function create() {
-  real.hero = this.load.image(10, 5 , 'hero')
+  real.hero = this.load.image(10,100 , 'hero')
   var map = this.add.tilemap('dvdmapone')
   var dvdtileone = map.addTilesetImage('tilesetone','dvdtileone')
   var SkyOne = map.createStaticLayer("SkyOne", [dvdtileone], 0, 0)
