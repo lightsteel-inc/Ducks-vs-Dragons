@@ -34,6 +34,7 @@ function create() {
   this.physics.add.collider(real.hero, GroundBlackOne)
   this.physics.add.collider(real.hero, SkyOne)
   GroundBlackOne.setCollisionByProperty({collides:true}) 
+  GroundBlackOne.setCollision({20,21,22,23,24,25})
   SkyOne.setCollisionByProperty({collides:true}) 
 }
 function update() {
