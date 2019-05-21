@@ -27,3 +27,4 @@ function create() {
   var toplayer = map.createStaticLayer("SkyOne", [dvdtileone], 0, 0)
   var bottomlayer = map.createStaticLayer("GroundBlackOne", [dvdtileone], 0, 0)
 }
+function update() {}
