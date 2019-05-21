@@ -23,7 +23,6 @@ function preload() {
   this.load.tilemapTiledJSON('dvdmapone','assets/dvdmapone.json')
 }
 function create() {
-  real.hero = this.physics.add.sprite(50,50,'image')
   var map = this.add.tilemap('dvdmapone')
   var dvdtileone = map.addTilesetImage('tilesetone','dvdtileone')
   var SkyOne = map.createStaticLayer("SkyOne", [dvdtileone], 0, 0)
@@ -31,6 +30,7 @@ function create() {
   real.keyD = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
   real.keyA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
   real.keyW = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);
+  real.hero = this.physics.add.sprite(50,50,'image')
   this.physics.add.collider(real.hero, GroundBlackOne)
   this.physics.add.collider(real.hero, SkyOne)
   GroundBlackOne.setCollisionByProperty({collides:true}) 
