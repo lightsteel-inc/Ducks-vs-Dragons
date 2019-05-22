@@ -41,7 +41,7 @@ this.physics.add.collider(real.hero, SkyOne)
   real.hero.setScale(2) 
   this.anims.create({
     key: 'FireDR',
-    frames: this.anims.generateFrameNumbers('fireDragon',{start: 0, end: 2}),
+    frames: this.anims.generateFrameNumbers('fireDragon',{start: 0, end: 1}),
     frameRate: 10,
     repeat: -1
   })
