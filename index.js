@@ -19,8 +19,8 @@ var config = {
 const real = {}
 var game = new Phaser.Game(config)
 function preload() {
-  this.load.image('dvdtileone','dvdsetone.png')
-  this.load.tilemapTiledJSON('dvdmapone','dvdmapone.json')
+  this.load.image('dvdtileone','assets/dvdsetone.png')
+  this.load.tilemapTiledJSON('dvdmapone','assets/dvdmapone.json')
   this.load.spritesheet('fireDragon','firedragonspritesheet.png', { frameWidth: 32, frameHeight: 48 })
 }
 function create() {
