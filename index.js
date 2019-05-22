@@ -21,8 +21,7 @@ var game = new Phaser.Game(config)
 function preload() {
   this.load.image('dvdtileone','dvdsetone.png')
   this.load.tilemapTiledJSON('dvdmapone','dvdmapone.json')
-  this.load.image('fireDragonLeft','firedragonleft.png')
-  this.load.image('fireDragonRight','firedragonright.png')
+  this.load.spritesheet('fireDragon','firedragonspritesheet.png')
 }
 function create() {
   var map = this.add.tilemap('dvdmapone')
@@ -40,13 +39,17 @@ this.physics.add.collider(real.hero, SkyOne)
   SkyOne.setCollisionByProperty({collides:true})
   real.hero.setCollideWorldBounds(true);
   real.hero.setScale(2) 
+  this.anims.create({
+    key: 'FireDR'
+    frames: this.anims.generateFrameNumbers('fireDragon',{start: 0, end: 1})
+    repeat: -1
+  })
 }
 function update() {
   if(real.keyD.isDown) 
   {
     real.hero.x += 5
-    fireDragonLeft.Destroy()
-    this.add.sprite('fireDragonRight',10,30)
+    real.hero.play('FireDR', true)  
   }
   if(real.keyA.isDown) 
   {
