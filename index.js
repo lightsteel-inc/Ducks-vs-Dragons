@@ -31,7 +31,7 @@ function create() {
     real.keyD = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
     real.keyA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
     real.keyW = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);
-    real.hero = this.physics.add.sprite(50,50,'fireDragonLeft')
+    real.hero = this.physics.add.sprite(50,50,'fireDragon')
 this.physics.add.collider(real.hero, GroundBlackOne)
 this.physics.add.collider(real.hero, SkyOne)
   GroundBlackOne.setCollisionByProperty({collides:true}) 
@@ -41,7 +41,7 @@ this.physics.add.collider(real.hero, SkyOne)
   real.hero.setScale(2) 
   this.anims.create({
     key: 'FireDR',
-    frames: this.anims.generateFrameNumbers('fireDragon',{start: 0, end: 1}),
+    frames: this.anims.generateFrameNumbers('fireDragon',{start: 0, end: 2}),
     frameRate: 10,
     repeat: -1
   })
