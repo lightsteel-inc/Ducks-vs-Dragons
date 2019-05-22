@@ -40,7 +40,7 @@ this.physics.add.collider(real.hero, SkyOne)
   real.hero.setCollideWorldBounds(true);
   real.hero.setScale(2) 
   this.anims.create({
-    key: 'FireDR',
+    key: 'FDRight',
     frames: this.anims.generateFrameNumbers('fireDragon',{start: 0, end: 1}),
     frameRate: 10,
     repeat: -1
@@ -50,7 +50,7 @@ function update() {
   if(real.keyD.isDown) 
   {
     real.hero.x += 5
-    real.hero.play('FireDR', true)  
+    real.hero.play('FDRight', true)  
   }
   if(real.keyA.isDown) 
   {
