@@ -72,3 +72,4 @@ function update() {
     real.hero.x += 5
   }
 }
+
