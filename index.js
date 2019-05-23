@@ -23,7 +23,7 @@ function preload()
 {
   this.load.image('dvdtileone','assets/dvdsetone.png')
   this.load.tilemapTiledJSON('dvdmapone','assets/dvdmapone.json')
-  this.load.spritesheet('fireDragon','dude.png')
+  this.load.spritesheet('dude','dude.png', { frameWidth: 32, frameHeight: 48 })
 }
 
 function create() 
@@ -35,7 +35,7 @@ function create()
     real.keyD = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
     real.keyA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
     real.keyW = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);
-    real.hero = this.physics.add.sprite(50,50,'fireDragon')
+    real.hero = this.physics.add.sprite(50,50,'dude')
 this.physics.add.collider(real.hero, GroundBlackOne)
 this.physics.add.collider(real.hero, SkyOne)
   GroundBlackOne.setCollisionByProperty({collides:true}) 
