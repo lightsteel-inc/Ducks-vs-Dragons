@@ -61,7 +61,7 @@ this.anims.create
 this.anims.create
 ({
     key: 'right',
-    frames: this.anims.generateFrameNumbers('dude', { start: 5, end: 8 }),
+    frames: this.anims.generateFrameNumbers('real.hero', { start: 5, end: 8 }),
     frameRate: 10,
     repeat: -1
 });
@@ -71,18 +71,18 @@ function update() {
   if(real.keyD.isDown) 
   {
     real.hero.x += 5
-    player.anims.play('right', true);
+    real.hero.anims.play('right', true);
   }
   if(real.keyA.isDown) 
   {
     real.hero.x -= 5
-    player.anims.play('left', true);
+    real.hero.anims.play('left', true);
   }
   if(real.keyW.isDown) 
   {
     real.hero.y -= 5
   } else  {
-    player.anims.play('turn');
+    real.hero.anims.play('turn');
   }
    if(real.keyW.isDown && real.keyA.isDown) 
    {
