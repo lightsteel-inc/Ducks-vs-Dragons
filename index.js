@@ -73,7 +73,6 @@ function update() {
   if(real.keyW.isDown) 
   {
     real.hero.y -= 5
-  } else  {
     player.anims.play('turn');
   }
    if(real.keyW.isDown && real.keyA.isDown) 
