@@ -63,16 +63,18 @@ function update() {
   if(real.keyD.isDown) 
   {
     real.hero.x += 5
-    real.hero.play('FDRight', true)  
+    player.anims.play('right', true);
   }
   if(real.keyA.isDown) 
   {
     real.hero.x -= 5
-    
+    player.anims.play('left', true);
   }
   if(real.keyW.isDown) 
   {
     real.hero.y -= 5
+  } else  {
+    player.anims.play('turn');
   }
    if(real.keyW.isDown && real.keyA.isDown) 
    {
