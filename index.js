@@ -1,7 +1,7 @@
 var canvas = document.getElementById('canvas')
 var ctx = canvas.getContext('2d')
 
-function rect(x,y,width,height,){
+function rect(x,y,width,height,color){
   ctx.beginPath()
   ctx.fillStyle = 'color'
   ctx.rect(x,y,width,height)
