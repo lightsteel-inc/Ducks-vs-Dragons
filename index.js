@@ -8,3 +8,4 @@ function rect(x,y,width,height,){
   context.fill()
   context.closePath()
 }
+var background = new rect(0,0,canvas.width,canvas.height,'#B5D8F6')
