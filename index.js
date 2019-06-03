@@ -3,7 +3,7 @@ var ctx = canvas.getContext('2d')
 
 function rect(x,y,width,height,color){
   ctx.beginPath()
-  ctx.fillStyle = 'color'
+  ctx.fillStyle = color
   ctx.rect(x,y,width,height)
   ctx.fill()
   ctx.closePath()
