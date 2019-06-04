@@ -8,13 +8,6 @@ context.fill()
 context.closePath()
 context.beginPath()
 context.fillStyle = '#00FF00'
-context.rect(0,100,100,100)
+context.rect(0,450,800,50)
 context.fill()
 context.closePath()
-
-
-
-
-
-
-
