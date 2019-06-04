@@ -8,14 +8,14 @@ context.fill()
 context.closePath()
 context.beginPath()
 context.fillStyle = '#00FF00'
-context.rect(0,550,800,50)//floor
+context.rect(0,450,800,50)//floor
 context.fill()
 context.closePath()
 context.beginPath()
 context.fillStyle = '#000000'
-context.rect(75,100,100,10)//top left
-context.rect(325,100,100,10)//top right
-context.rect(150,300,200,10)//middle platform
+context.rect(100,100,100,10)//top left
+context.rect(350,100,100,10)//top right
+context.rect(200,300,200,10)//middle platform
 context.fill()
 context.closePath()
 
