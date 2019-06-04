@@ -8,9 +8,9 @@ function rect(x,y,width,height,color){
   this.height = height
   this.color = color
 }
-var rect = new rect(0,0,canvas.width,canvas.height,'#B5D8F6')
-var rectone = new rect(100,100,10,10,'#36FF33')
-var recttwo = new rect(10,10,10,10,'#36FF33')
+var reverseFlash = new rect(0,0,canvas.width,canvas.height,'#B5D8F6')
+var falsh = new rect(100,100,10,10,'#36FF33')
+var flash = new rect(10,10,10,10,'#36FF33')
 
 
 
