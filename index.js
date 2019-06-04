@@ -9,7 +9,7 @@ function rect(x,y,width,height,color){
   this.color = color
 }
 var reverseFlash = new rect(0,0,canvas.width,canvas.height,'#B5D8F6')
-\
+
 
 
 
