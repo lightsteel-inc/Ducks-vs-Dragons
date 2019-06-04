@@ -4,7 +4,7 @@ var context = canvas.getContext('2d')
 function rect(x,y,width,height ,color){
   context.beginPath()
   context.fillStyle = color
-  context.rect(this.x,this.y,this.width,this.height)
+  context.rect(x,y,width,height)
   context.fill()
   context.closePath()
 }
