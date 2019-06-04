@@ -6,7 +6,7 @@ context.fillStyle = '#09DEFF'
 context.rect(0,0,canvas.width,canvas.height)
 context.fill()
 context.fillStyle = '#00FF00'
-context.rect(0,500,300,100)
+context.rect(0,200,300,100)
 context.fill()
 context.closePath()
 
