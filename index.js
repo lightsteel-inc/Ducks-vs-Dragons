@@ -7,6 +7,7 @@ context.rect(0,0,canvas.width,canvas.height)
 context.fill()
 context.fillStyle = '#000000'
 context.rect(0,500,700,100)
+context.fill()
 context.closePath()
 
 
