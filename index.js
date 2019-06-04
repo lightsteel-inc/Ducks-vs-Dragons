@@ -8,7 +8,7 @@ function rect(x,y,width,height ,color){
   this.height = height
   this.color = color
 }
-var  = new rect(0,0,canvas.width,canvas.height,'#B5D8F6')
+var A = rect(0,0,canvas.width,canvas.height,'#B5D8F6')
 
 
 
